@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clinical Trial Feasibility Survey</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+<h1 id="title">Miradad Clinical Study Survey for Phase 1</h1>
+
+<form id="survey-form" action="index.html" method="post">
+
+  <p id="description">Questions to determine feasibility of study at your site</p>
+
+<div class="fullname">
+  <label id="name-label" for="name">Full Name:</label>
+  <input required id="name" type="text" name="name" placeholder="Enter your name" autocomplete="name">
+</div>
+
+<div class="email">
+  <label id="email-label" for="email">Email:</label>
+  <input required id="email" type="email" name="email" placeholder="Enter your email address" autocomplete="email">
+</div>
+
+<div class="number">
+  <label id="number-label" for="yearsxp">Years of Experience:</label>
+  <input required id="number" type="number" name="yearsxp" placeholder="Years Exp" min="0" max="60">
+</div>
+
+<div class="dropdown">
+  <label for="specialty">Please select your area of expertise:</label>
+  <select id="dropdown" name="specialty">
+    <option value="" selected disabled hidden>Please select specialty</option>
+    <option value="cardio">Cardiology</option>
+    <option value="med-dev">Medical Devices</option>
+    <option value="onc">Oncology</option>
+    <option value="pedi">Pediatrics</option>
+    <option value="pulm">Pulmonolgist</option>
+    <option value="radi">Radiology</option>
+  </select>
+</div>
+
+<div class="radio">
+  <label for="radio-buttons">After reading through the protocol, please specify if you would be interested in joining the Study:</label>
+    <label>Yes<input name="radio-buttons" value="1" type="radio" class="interest"></label>
+    <label>No<input name="radio-buttons" value="2" type="radio" class="interest"></label>
+</div>
+
+<div class="phases">
+  <label for="phases">Which Study-Phases are you experienced within?</label>
+    <label>Phase I<input type="checkbox" name="phases" value="phase1"></label>
+    <label>Phase II<input type="checkbox" name="phases" value="phase2"></label>
+    <label>Phase III<input type="checkbox" name="phases" value="phase3"></label>
+    <label>Phase IV<input type="checkbox" name="phases" value="phase4"></label>
+</div>
+
+<div class="comments">
+<label for="comments">Please leave any relevant study comments here:</label>
+<textarea name="comments" rows="5" cols="30" maxlength="500" placeholder="Comments" spellcheck="true"></textarea>
+</div>
+
+<div class="submit">
+<input id="submit" type="submit" name="submit" value="Submit">
+</div>
+
+</form>
+
+
+</body>
+</html>
